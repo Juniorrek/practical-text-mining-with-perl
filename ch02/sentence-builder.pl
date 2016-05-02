@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
 use v5.22;
 
-my $target = qr/\b($ARGV[0])\b/i;
-my $radius = $ARGV[1];
-my $filename = $ARGV[2];
+my $target = qr/([\.?!][\s\',]*[a-z])/;
+my $radius = $ARGV[0];
+my $filename = $ARGV[1];
 my $width = 2 * $radius; # width of exract w/out target
 
 open FILE, $filename or die 'File not found';
