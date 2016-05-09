@@ -26,7 +26,7 @@ foreach $char ( sort byReverseValues keys %freq ) {
 
 print "\nTotal number of letters: $count\n";
 
-foreach $letter ( 'a' .. 'z' ) {
+foreach $letter ( sort byReverseValues 'a' .. 'z' ) {
     print "$letter: $freq{$letter}\n";
 }
 
