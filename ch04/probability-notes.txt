@@ -1,0 +1,7 @@
+P(E|F) = P(E and F) / P(F)
+P(E|F) = ( n(E and F)/n ) / ( n(F)/n )
+ergo: P(E|F) = n(E and F) / n(F)
+
+MULTIPLICATION RULE
+P(E and F) = P(E)*P(F) when E and F are independent
+the closer 'and' is to '*', the more likely events are to be independent
