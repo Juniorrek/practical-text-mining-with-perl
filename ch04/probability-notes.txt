@@ -5,3 +5,6 @@ ergo: P(E|F) = n(E and F) / n(F)
 MULTIPLICATION RULE
 P(E and F) = P(E)*P(F) when E and F are independent
 the closer 'and' is to '*', the more likely events are to be independent
+
+95% confidence formula
+(Y_bar - w 2(s_Y/sqrt(n)), Y-bar + 2(2_Y/sqrt(Y))
