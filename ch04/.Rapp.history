@@ -1,0 +1,44 @@
+source("http://www.headfirstlabs.com/books/hfda/hfda.R")
+save.image()
+employees
+hist(employees$received, breaks=50)
+hist(employees$received, breaks=25)
+hist(employees$received, breaks=100)
+hist(employees$received, breaks=200)
+hist(employees$received, breaks=100)
+sd(employees$received)
+summary(employees$received)
+help(sd)
+help(summary)
+help(summ)
+help(summary)
+quit()
+quit(save="false")
+quit()
+help(cloud)
+cloud
+employees <- read.csv("http://www.headfirstlabs.com/books/hfda/hfda_ch10_employees.csv", header=TRUE)
+head(employees,n=30)
+plot(employees$requested[employees$negotiated=TRUE], employees$received[employees$negotiated=TRUE])
+plot(employees$requested[employees$negotiated==TRUE], employees$received[employees$negotiated==TRUE])
+save.image()
+exit
+quit
+quit()
+setwd('/Users/aaronwells/Programming/practical-text-mining/ch04')
+getwd()
+chardata = read.csv('rank-freq.csv')
+chardata
+chardata$X4
+chardata$X9308
+rank = chardata$X4
+freq = chardata$X9308
+log_rank = log10(rank)
+log_freq = log10(freq)
+plot(log_rank, log_freq, xlab="log rank", ylab="log frequency")
+plot(log_freq, log_rank, xlab="log frequency", ylab="log rank")
+log_rank = log2(rank)
+log_freq  = log2(freq)
+plot(log_freq, log_rank, xlab="log frequency", ylab="log rank")
+exit()
+quit()
