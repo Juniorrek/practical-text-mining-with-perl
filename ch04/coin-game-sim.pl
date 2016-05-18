@@ -1,5 +1,5 @@
 use feature 'say';
-use constant GAMES => 1_000;
+use constant GAMES => 1_000_000;
 
 sub get_simulation {
     my( $history, $winner );

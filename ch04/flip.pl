@@ -7,4 +7,4 @@ for my $n ( 1 .. $ARGV[0] ) {
 }
 
 $proportion = $count / $ARGV[0]; # Empirical probability
-print "\nProbability fo heads = $proportion\n";
+print "\nProbability of heads = $proportion\n";

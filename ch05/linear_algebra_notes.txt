@@ -1,0 +1,8 @@
+dot product (inner product)
+    useful for finding angle between 2 vectors
+length of a vector x
+    sqrt( x^Tx )
+
+angle theta between 2 vectors x and y is theta such that:
+    cos( theta ) = x^Ty / |x| * |y|
+    *to get theta, aply arccos fn to this equation
