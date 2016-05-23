@@ -1,0 +1,18 @@
+dot product (inner product)
+    useful for finding angle between 2 vectors
+length of a vector x
+    sqrt( x^Tx )
+
+angle theta between 2 vectors x and y is theta such that:
+    cos( theta ) = x^Ty / |x| * |y|
+    *to get theta, aply arccos fn to this equation
+
+Logarithmic modification
+    log(f + 1) lessens the impact of frequent words
+    doesn't do a GREAT job of reducing noise
+
+Inverse Document Frequency (IDF)
+    - The less a term appears in a collection of documents, the higher its value of IDF.
+    - with N = total # of documents, N_t is total documents containing the term:
+        IDF_t = log( N / N_t )
+    - affect: as N_t gets larger, ITF of a term gets smaller

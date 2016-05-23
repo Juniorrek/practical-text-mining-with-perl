@@ -1,0 +1,6 @@
+Simple TF-IDF Steps for Poe
+1. All words are counted, which produces the term frequencies
+2. The number of stories in which each word appears is counted, which are the document frequencies
+3. The TF-IDF values are computed
+4. The document vectors are normalized (each item divided by its column's length [i.e. magnitude i.e. inner product with its row vector => sum map { $_ ** 2 } @column])
+5. The cosines are computed by taking the inner products
