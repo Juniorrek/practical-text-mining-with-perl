@@ -1,0 +1,13 @@
+|x| = sqrt( t(x) * x )
+cos theta = (t(x) * y) / |x|*|y|
+product = t(M) %*% M
+inv_col_len = solve(diag(sqrt(diag(product))))
+N = M %*% inv_col_len
+cos_matrix = t(N) %*% N
+angles = acos(cos_matrix) / pi*180
+
+# unweight more frequent words
+M = M.apply(f -> log(f + 1))
+
+# where N is num docs; N_t is num docs containing term
+IDF_t = log(N / N_t)
