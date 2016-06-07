@@ -1,0 +1,4 @@
+P(green phone) ~~ P(green)P(phone) # probability of 2 uncollocated words ending up next to each other should be the product of their individual probabilities
+P(blue moon) > P(blue)P(moon)
+P(throw up) > P(throw)P(up)
+# probability of two collocated words ending up next to each other greater than the product of their probabilities (meaning their meaning changes significantly when used together)
