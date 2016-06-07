@@ -2,10 +2,10 @@
 # This program is case insensitive.
 # This program counts all characters, not just letters.
 
-open FILE, "<:crlf", "$ARGV[0]" or die "$ARGV[0] not found";
+# open FILE, "<:crlf", "$ARGV[0]" or die "$ARGV[0] not found";
 $/ = ""; # paragraph mode
 
-while (<FILE>) {
+while (<>) {
     chomp;
     s/\n/ /g; # newline vs space
     $_ = lc; # case insensitive
