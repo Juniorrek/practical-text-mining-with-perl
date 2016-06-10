@@ -5,12 +5,11 @@ GetOptions(
     'file:s' => \my $file,
     'target:s' => \my $target,
     'radius:i' => \my $radius,
-    'width:s' => \my $width,
 );
 
 $target or die "no target word provided";
 $radius //= 20;
-$width = 2*$radius;
+my $width = 2*$radius;
 
 open my $fh, '<', $file or die "File not found";
 
