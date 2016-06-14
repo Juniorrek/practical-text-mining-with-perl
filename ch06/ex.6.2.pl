@@ -38,8 +38,10 @@ close CALL;
 open RESULT, '>', 'results.csv';
 say RESULT 'frankenstein word,frankenstein count,call of the wild word,call of the wild count';
 
-my @frank_words = sort { byDescendingValues($frank_counts)->() } keys %$frank_counts;
-my @call_words = sort { byDescendingValues($call_counts)->() } keys %$call_counts;
+my $frank_descending = byDescendingValues($frank_counts);
+my $call_descending = byDescendingValues($call_counts);
+my @frank_words = sort $frank_descending keys %$frank_counts;
+my @call_words = sort $call_descending keys %$call_counts;
 
 while ( exists($frank_words[0]) or exists($call_words[0]) ) {
     my($frank, $call) = (shift(@frank_words) || '', shift(@call_words) || '');
