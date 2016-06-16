@@ -1,0 +1,29 @@
+eigenvector - a vector x such that:
+    - given a square matrix M where M is symmetric about the diagonal
+    - given a number λ
+        => Mx = λx
+
+eigenvalue - a value λ such that
+    - given a square matrix M where M is symmetric about the diagonal
+    - given a vector x
+        => Mx = λx
+
+theorem: n by n correlation & covariance matrices have n real, orthogonal eigenvectors with n real eigenvalues
+
+R: a symmetric, square matrix, where each column is a unit vector
+    - Rij = 1 if i == j
+
+E: (e_1 e_2) OR (e_1 e_2 ... e_n)
+V: (λ_1 0  ) OR λ_1 ... λ_n along diagonals, etc.
+   (0   λ_2)
+
+RE = EV
+
+TRANSPOSE OF PRODUCT OF MATRICES
+(MN)^T = N^T %*% M^T
+
+for all vectors x:
+Ix = x
+xI = x
+
+R = RI = R(EE^T) = (RE)E^T = EVE^T
