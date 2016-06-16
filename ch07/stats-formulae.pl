@@ -1,3 +1,4 @@
+use v5.18;
 use List::Util qw(sum);
 
 sub sample_mean {
@@ -68,7 +69,8 @@ sub cos_via_correlation {
         $sumx2 += $x[$_] ** 2;
         $sumy2 += $y[$_] ** 2;
     }
-    ($sum_xy) / (sqrt( $sum_x) * sqrt( $sum_y ))
+
+    ($sum_xy) / (sqrt( $sumx2) * sqrt( $sumy2 ))
 }
 
 =head2 
@@ -78,7 +80,13 @@ sub covariance {
     my($x,$y) = @_;
     my $n = @$x;
     my($mean_x, $mean_y) = map { sum(@$_) / $n } $x, $y;
-    ( 1 / (n - 1) ) * sum( map { ($x->[$_] - $mean_x) * ($y->[$_] - $mean_y) } 1 .. $#{$x} );
+
+    ( 1 / ($n - 1) )
+  * sum(
+    map {
+        ($x->[$_] - $mean_x)
+      * ($y->[$_] - $mean_y)
+    } 1 .. $#{$x});
 }
 
 =head2 equivalence: covariance == correlation
