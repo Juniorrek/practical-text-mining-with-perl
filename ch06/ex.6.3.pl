@@ -66,8 +66,8 @@ sub removePunctuation {
 }
 
 sub byMatch {
-    my $middle_a = substr($a, $radius, $length($a) - 2*$radius);
-    my $middle_b = substr($b, $radius, $length($b) - 2*$radius);
+    my $middle_a = substr($a, $radius, length($a) - 2*$radius);
+    my $middle_b = substr($b, $radius, length($b) - 2*$radius);
     $middle_a = removePunctuation($middle_a);
     $middle_b = removePunctuation($middle_b);
     $middle_a cmp $middle_b;
